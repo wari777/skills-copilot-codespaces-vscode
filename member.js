@@ -1,17 +1,12 @@
-function skilsmember() {
-    var member = document.getElementById("member").value;
-    if (member == "") {
-        document.getElementById("member").style.borderColor = "red";
-        document.getElementById("member").style.borderWidth = "2px";
-        document.getElementById("member").style.borderStyle = "solid";
-        document.getElementById("member").style.borderRadius = "5px";
-        document.getElementById("member").placeholder = "Please enter your member";
-        return false;
-    } else {
-        document.getElementById("member").style.borderColor = "green";
-        document.getElementById("member").style.borderWidth = "2px";
-        document.getElementById("member").style.borderStyle = "solid";
-        document.getElementById("member").style.borderRadius = "5px";
-        return true;
-    }
-}
+function skillsMember() {
+    var skills = ['HTML', 'CSS', 'JS', 'React', 'Node'];
+    var member = {
+        name: 'John Doe',
+        age: 34,
+        skills: skills
+    };
+    console.log(member.skills);
+    console.log(member.skills[2]);
+    console.log(member.skills.length);
+    console.log(member.skills[member.skills.length - 1]);
+} 
